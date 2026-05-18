@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Bites - About Us</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  color:white;
+
+  /* PREMIUM BACKGROUND */
+  background:
+  linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+  url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1920&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:rgba(0,0,0,0.6);
+  position:sticky;
+  top:0;
+}
+
+nav h1{
+  color:#ffb703;
+  font-size:32px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#ffb703;
+}
+
+/* HERO / ABOUT SECTION */
+.container{
+  max-width:900px;
+  margin:80px auto;
+  text-align:center;
+  padding:20px;
+}
+
+h1{
+  font-size:60px;
+  color:#ffb703;
+  margin-bottom:20px;
+  text-shadow:2px 2px 10px black;
+}
+
+p{
+  font-size:20px;
+  color:#ddd;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+/* BOX */
+.box{
+  background:rgba(30,30,30,0.85);
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 0 25px rgba(0,0,0,0.6);
+  margin-top:30px;
+  backdrop-filter:blur(6px);
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:15px 35px;
+  background:#ffb703;
+  color:black;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:30px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#aaa;
+  margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>Urban Bites</h1>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">menu</a></li>
+    <li><a href="about us.html">about</a></li>
+    <li><a href="order form.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ABOUT SECTION -->
+<div class="container">
+
+  <h1>About Us</h1>
+
+  <p>
+    Welcome to Urban Bites, where every meal is made with passion, freshness,
+    and rich flavors that bring happiness in every bite.
+  </p>
+
+  <div class="box">
+
+    <p>
+      At Urban Bites, we don’t just serve food — we serve experience.
+      From juicy burgers to spicy karahi, crispy wings to sweet desserts,
+      every dish is crafted with love and quality ingredients.
+    </p>
+
+    <p>
+      Our mission is to deliver fast service, amazing taste, and unforgettable
+      dining experience for every customer.
+    </p>
+
+    <a href="#" class="btn">Explore Menu</a>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Urban Bites | All Rights Reserved
+</footer>
+
+</body>
+</html>

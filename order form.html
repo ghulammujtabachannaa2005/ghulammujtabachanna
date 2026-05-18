@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Bites - Order Form</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  color:white;
+
+  /* MULTI BACKGROUND EFFECT */
+  background:
+  linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+  url('https://images.unsplash.com/photo-1604908176997-431f5e7c7b7b?q=80&w=1600&auto=format&fit=crop'),
+  url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600&auto=format&fit=crop'),
+  url('https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1600&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  animation: bgChange 12s infinite alternate;
+}
+ nav{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+      background:rgba(0,0,0,0.7);
+      position:fixed;
+      top:0;
+      z-index:1000;
+    }
+
+    nav h1{
+      color:#ffb703;
+      font-size:32px;
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#ffb703;
+    }
+
+
+/* BACKGROUND ANIMATION */
+@keyframes bgChange{
+  0%{
+    filter:hue-rotate(0deg);
+  }
+  50%{
+    filter:hue-rotate(20deg);
+  }
+  100%{
+    filter:hue-rotate(40deg);
+  }
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:40px 20px;
+}
+
+header h1{
+  font-size:55px;
+  color:#ffb703;
+  text-shadow:2px 2px 10px black;
+}
+
+header p{
+  color:#ddd;
+  font-size:18px;
+}
+
+/* FORM */
+.form-container{
+  max-width:600px;
+  margin:20px auto 60px;
+  background:rgba(20,20,20,0.85);
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 0 30px rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+}
+
+/* INPUTS */
+input, select, textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  outline:none;
+}
+
+/* BUTTON */
+button{
+  width:100%;
+  padding:15px;
+  background:#ffb703;
+  color:black;
+  font-size:18px;
+  font-weight:bold;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+/* LABEL */
+label{
+  font-size:14px;
+  color:#ddd;
+}
+
+</style>
+</head>
+
+<body>
+   <nav>
+    <h1>Urban Bites</h1>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="order form.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+<header>
+  <h1>Urban Bites</h1>
+  <p>Order your favorite food with a premium experience 🍔🍗🍛</p>
+</header>
+
+<div class="form-container">
+
+<form>
+
+  <label>Full Name</label>
+  <input type="text" placeholder="Enter your name" required>
+
+  <label>Phone Number</label>
+  <input type="tel" placeholder="03XX-XXXXXXX" required>
+
+  <label>Select Food Item</label>
+  <select required>
+    <option>-- Choose Item --</option>
+    <option>Mutton Karahi</option>
+    <option>Chicken Tikka</option>
+    <option>Chicken Booti</option>
+    <option>Biryani</option>
+    <option>Chinese Rice</option>
+    <option>Chicken Wings</option>
+    <option>Shahi Zarda</option>
+    <option>Cold Drink</option>
+  </select>
+
+  <label>Quantity</label>
+  <input type="number" min="1" max="20" value="1" required>
+
+  <label>Delivery Address</label>
+  <textarea rows="4" placeholder="Enter your full address" required></textarea>
+
+  <label>Payment Method</label>
+  <select required>
+    <option>Cash on Delivery</option>
+    <option>Card Payment</option>
+    <option>Online Transfer</option>
+  </select>
+
+  <button type="submit">Place Order</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

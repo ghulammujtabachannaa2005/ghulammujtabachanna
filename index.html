@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Urban Bites</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+    }
+
+    /* Navbar */
+    nav{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+      background:rgba(0,0,0,0.7);
+      position:fixed;
+      top:0;
+      z-index:1000;
+    }
+
+    nav h1{
+      color:#ffb703;
+      font-size:32px;
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#ffb703;
+    }
+
+    /* Hero Section */
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:70px;
+      color:#ffb703;
+      margin-bottom:20px;
+      text-shadow:2px 2px 10px black;
+    }
+
+    .hero-content p{
+      font-size:24px;
+      margin-bottom:35px;
+      max-width:700px;
+      line-height:1.6;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#ffb703;
+      color:black;
+      text-decoration:none;
+      font-size:18px;
+      border-radius:40px;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    /* Features Section */
+    .features{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      padding:80px 40px;
+      background:#1b1b1b;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:#222;
+      padding:30px;
+      width:300px;
+      border-radius:15px;
+      text-align:center;
+      transition:0.3s;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      background:#2c2c2c;
+    }
+
+    .card h3{
+      color:#ffb703;
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .card p{
+      line-height:1.6;
+      color:#ddd;
+    }
+
+    /* Footer */
+    footer{
+      background:black;
+      text-align:center;
+      padding:20px;
+      color:#aaa;
+      font-size:16px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      .hero-content h2{
+        font-size:45px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Urban Bites</h1>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about us.html">About</a></li>
+      <li><a href="order form.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="hero-content">
+      <h2>Welcome to Urban Bites</h2>
+
+      <p>
+        Delicious burgers, crispy fries, spicy wraps,
+        and refreshing drinks made fresh every day.
+      </p>
+
+      <a href="#" class="btn">Order Now</a>
+    </div>
+
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+
+    <div class="card">
+      <h3>Fresh Food</h3>
+      <p>
+        We use fresh ingredients and premium quality products
+        to deliver the best taste.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Fast Delivery</h3>
+      <p>
+        Get your favorite fast food delivered hot and fresh
+        at your doorstep quickly.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Best Taste</h3>
+      <p>
+        Experience mouth-watering flavors and classic recipes
+        loved by everyone.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Urban Bites | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
